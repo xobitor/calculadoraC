@@ -9,10 +9,9 @@ void soma()
     printf("\n\nIntroduza outro numero inteiro: ");
     scanf("%d", &y);
     res = x + y;
-    printf("\n\n%d + %d = %d", x, y, res)
-    system ("pause"); 
+    printf("\n\n%d + %d = %d", x, y, res);
+    system("PAUSE");
     system("cls"); 
-    menu(); 
 }
 
 void subtrai()
@@ -23,8 +22,8 @@ void subtrai()
     printf("\n\nIntroduza outro numero inteiro: ");
     scanf("%d", &y);
     res = x - y;
-    printf("\n\n%d - %d = %d", x, y, res)
-    system ("pause");
+    printf("\n\n%d - %d = %d", x, y, res);
+    system ("PAUSE");
     system("cls"); 
     
 }
@@ -39,9 +38,8 @@ void divide()
     scanf("%d", &y);
     res = x/y;
     printf("\n\n%d / %d = %f", x, y, res);
-    system ("pause");
+    system ("PAUSE");
     system("cls");
-    menu();
 }
 
 void multiplica()
@@ -53,7 +51,7 @@ void multiplica()
     scanf("%d", &y);
     res = x * y;
     printf("\n\n%d * %d = %d", x, y, res);
-    system ("pause");
+    system ("PAUSE");
     system("cls");
 }
 
@@ -75,19 +73,23 @@ void menu()
     switch (escolha)
     {
         case 1: 
-            soma(); 
+            soma();
+            menu();
         break; 
 
         case 2:
             subtrai();
+            menu();
         break;
 
         case 3:
             divide();
+            menu();
         break;
 
         case 4:
             multiplica();
+            menu();
             break;
 
         case 5:
