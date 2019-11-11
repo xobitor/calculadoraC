@@ -25,7 +25,14 @@ void subtrai()
 
 void divide()
 { 
-    //todo
+    int x, y;
+    float res;
+    printf("Introduza um numero inteiro: ");
+    scanf("%d", &x);
+    printf("\n\nIntroduza outro numero inteiro: ");
+    scanf("%d", &y);
+    res = x/y;
+    printf("\n\n%d / %d = %f", x, y, res);
     system ("pause");
     system("cls");
     menu();
