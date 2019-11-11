@@ -11,10 +11,16 @@ void soma()
 
 void subtrai()
 {
-    //todo
+    int x, y, res;
+    printf("Introduza um numero inteiro: ");
+    scanf("%d", &x);
+    printf("\n\nIntroduza outro numero inteiro: ");
+    scanf("%d", &y);
+    res = x - y;
+    printf("\n\n%d - %d = %d", x, y, res)
     system ("pause");
     system("cls"); 
-    menu();
+    
 }
 
 void divide()
